@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
+    <script type="module" src="./search-form.js"></script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -21,6 +22,12 @@
         </h1>
         <load src="./partials/back-link.html" />
       </div>
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search images..."/>
+        <button type="submit" id="searchButton">Search</button>
+        <span class="loader"></span>
+        <div class="gallery" id="gallery"></div>
+        <button type="button" class="btn" style="display: none;">Load more</button>
     </main>
 
     <load src="./partials/footer.html" />
